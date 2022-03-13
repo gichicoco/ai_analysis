@@ -9,12 +9,16 @@ https://ai-analysis.herokuapp.com/
 ### AI分析
 - 画像パス送信
 
+
 # 参考資料
+
 ## 公式ドキュメント
 - Heroku スターターガイド (Python)
   - https://devcenter.heroku.com/ja/articles/getting-started-with-python#-4
 - Heroku のための Django アプリの設定
   - https://devcenter.heroku.com/ja/articles/django-app-configuration
+- Bootstrap
+  - https://getbootstrap.jp/docs/5.0/getting-started/introduction/
 
 ## 書籍
 - Python Django3 超入門 (掌田 津耶乃)
