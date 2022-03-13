@@ -23,6 +23,6 @@ https://ai-analysis.herokuapp.com/
 - 実践Django Pythonによる本格Webアプリケーション開発 (芝田 将)
 - Web API The Good Parts (水野 貴明)
 
-## Udemy講座
+## Udemy
 - プログラミング初心者でも安心、Python/Django入門講座 (滝澤 成人)
 - APIを基礎からしっかりと学び、Django Rest Frameworkで天気情報を取得するアプリを作ろう！ (大橋 亮太, 古田 薫)
