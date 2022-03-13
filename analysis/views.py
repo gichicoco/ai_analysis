@@ -36,7 +36,8 @@ def analysis_new(request):
             post_value = request.POST.get('image_path')
 
             # image_pathの値が画像の拡張子('.jpg', '.png')を含むかチェックし、各値をセット
-            if re.compile(".jpg|.png").search(post_value):
+            # if re.compile(".jpg|.png").search(post_value):
+            if post_value.endswith('.jpg') or post_value.endswith('.png'):
                 success = True
                 message = 'success'
                 class_num = random.randint(1, 9)

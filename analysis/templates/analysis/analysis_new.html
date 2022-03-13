@@ -3,7 +3,10 @@
 {% block content %}
 <div class="container">
   <h1 class="display-6 text-primary mt-4">AI Analysis</h1>
-  <p class="mt-5">画像ファイルのパスを入力してください。</p>
+  <p class="mt-5">
+    画像ファイルのパスを入力してください。(拡張子は .jpg または .png のみ)
+
+  </p>
   <form method="post">
     {% csrf_token %}
     <table class="mt-2" width="300">
