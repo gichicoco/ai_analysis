@@ -1,6 +1,6 @@
 # ai_analysis
 
-## demo
+## デモ
 https://ai-analysis.herokuapp.com/
 
 ### トップページ
