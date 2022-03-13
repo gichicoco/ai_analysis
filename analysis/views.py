@@ -15,7 +15,7 @@ from .forms import AnalysisForm
 def top(request, num=1):
     analyses = Analysis.objects.all()
     analyses = analyses.order_by('-id')
-    page = Paginator(analyses, 10)
+    page = Paginator(analyses, 5)
     params = {
         'analyses': page.get_page(num),
     }
@@ -52,7 +52,7 @@ def analysis_new(request):
             else:
                 success = False
                 message = 'Error:E50012'
-                class_num = 99999999999
+                class_num = 9999
                 confidence = 0
                 pre_json = {
                     'success': success,
