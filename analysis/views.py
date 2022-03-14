@@ -14,7 +14,7 @@ from .forms import AnalysisForm
 @require_safe
 def top(request, num=1):
     analyses = Analysis.objects.all()
-    analyses = analyses.order_by('-id')
+    analyses = analyses.order_by('id').reverse()
     page = Paginator(analyses, 5)
     params = {
         'analyses': page.get_page(num),
@@ -34,10 +34,13 @@ def analysis_new(request):
             request_timestamp = int(time.time())
             # POSTされた値を取得
             post_value = request.POST.get('image_path')
+            post_value = post_value.strip()
 
-            # image_pathの値が画像の拡張子('.jpg', '.png')を含むかチェックし、各値をセット
-            # if re.compile(".jpg|.png").search(post_value):
-            if post_value.endswith('.jpg') or post_value.endswith('.png'):
+            # image_pathの入力をチェックし、変数に値をセット
+            if (post_value.endswith('.jpg') or post_value.endswith('.png')) \
+                    and re.compile('.+\..{2}g').search(post_value) \
+                    and not re.compile('\.+').search(post_value) \
+                    and not re.compile('.+[\s].+').search(post_value):
                 success = True
                 message = 'success'
                 class_num = random.randint(1, 9)
