@@ -36,10 +36,9 @@ def analysis_new(request):
             post_value = request.POST.get('image_path')
             post_value = post_value.strip()
 
-            # image_pathの入力をチェックし、変数に値をセット
+            # 入力をチェックし、変数に値をセット
             if (post_value.endswith('.jpg') or post_value.endswith('.png')) \
-                    and re.compile('.+\..{2}g').search(post_value) \
-                    and not re.compile('\.+').search(post_value) \
+                    and not post_value.startswith('.') \
                     and not re.compile('.+[\s].+').search(post_value):
                 success = True
                 message = 'success'
@@ -56,8 +55,8 @@ def analysis_new(request):
             else:
                 success = False
                 message = 'Error:E50012'
-                class_num = 9999
-                confidence = 0
+                class_num = None
+                confidence = None
                 pre_json = {
                     'success': success,
                     'message': message,
