@@ -17,7 +17,7 @@ https://ai-analysis.herokuapp.com/
 
 ## 公式ドキュメント
 - Heroku スターターガイド (Python)
-  - https://devcenter.heroku.com/ja/articles/getting-started-with-python#-4
+  - https://devcenter.heroku.com/ja/articles/getting-started-with-python
 - Heroku のための Django アプリの設定
   - https://devcenter.heroku.com/ja/articles/django-app-configuration
 - Bootstrap
