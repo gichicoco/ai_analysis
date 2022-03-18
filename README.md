@@ -1,14 +1,19 @@
-# ai_analysis
+# DEMO
 
-## DEMO
 https://ai-analysis.herokuapp.com/
 
-### トップページ
+- DEMOとしてアクセスできるように、一部ソースコードを変更している部分があります
+  - settings.py の ALLOWED_HOSTS
+  - ベースURI
+
+# ai_analysis
+
+## トップページ
 - レコードを5件ずつ表示
 - 詳細ページ
 - 削除ページ
 
-### AI分析
+## AI分析
 - POSTリクエスト
   - 拡張子は .jpg と .png のみ有効
   - レスポンスは json で返される
@@ -24,6 +29,7 @@ https://ai-analysis.herokuapp.com/
   - https://getbootstrap.jp/docs/5.0/getting-started/introduction/
 
 ## 書籍
+- Webを支える技術 HTTP,URI,HTML,そしてREST
 - Python Django3 超入門 (掌田 津耶乃)
 - 現場で使えるDjangoの教科書 (横瀬 明仁)
 - 現場で使えるDjango REST Frameworkの教科書 (横瀬 明仁)
