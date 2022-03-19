@@ -3,7 +3,7 @@
 https://ai-analysis.herokuapp.com/
 
 - DEMOとしてアクセスできるように、一部ソースコードを変更している部分があります
-  - ベースURI
+  - ベースURI など
 
 # ai_analysis
 
