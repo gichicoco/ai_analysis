@@ -3,7 +3,6 @@
 https://ai-analysis.herokuapp.com/
 
 - DEMOとしてアクセスできるように、一部ソースコードを変更している部分があります
-  - settings.py の ALLOWED_HOSTS
   - ベースURI
 
 # ai_analysis
