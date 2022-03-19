@@ -1,6 +1,8 @@
 # DEMO
-
 https://ai-analysis.herokuapp.com/
+
+## DEMO環境(Heroku)のソースコード
+https://github.com/ngt-masa/ai_analysis_heroku
 
 - DEMOとしてアクセスできるように、一部ソースコードを変更している部分があります
   - ベースURI など
