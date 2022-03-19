@@ -70,7 +70,7 @@ def analysis_new(request):
                 'response_json': response_json,
             }
 
-            return render(request, 'analysis/analysis_json.html', params)
+            return render(request, 'analysis/analysis_result.html', params)
 
     else:
         form = AnalysisForm()
