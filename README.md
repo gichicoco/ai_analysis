@@ -16,7 +16,6 @@ https://github.com/ngt-masa/ai_analysis_heroku
 
 ## AI分析
 - POSTリクエスト
-  - 拡張子は .jpg と .png のみ有効
   - レスポンスは json で返される
 
 # 参考資料
