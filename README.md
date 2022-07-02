@@ -2,7 +2,7 @@
 https://ai-analysis.herokuapp.com/
 
 ## DEMO環境(Heroku)のソースコード
-https://github.com/miyabyist/ai_analysis_heroku
+https://github.com/miyabinchu/ai_analysis_heroku
 
 - DEMOとしてアクセスできるように、一部ソースコードを変更している部分があります
   - ベースURI,Herokuへのデプロイに必要なファイル など
